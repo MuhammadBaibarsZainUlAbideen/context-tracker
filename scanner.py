@@ -34,7 +34,7 @@ def get_commits(path):
         time_frame=1
 
     len1 = len(path)
-    print(f"Total Path:",len1)
+    print(f"Total Repos found:",len1)
     new_list = []
     for i in path:
         try:
@@ -52,7 +52,7 @@ def get_commits(path):
                 })
             
         except Exception as e:
-             print(f"Error: {e}")
+            pass
     new_list.sort(key=lambda x: x['timestamp'])
     return new_list
 
@@ -66,7 +66,7 @@ def detect_switches(commits):
         
         
         if current['repo_name'] != previous['repo_name']:
-            time_gap = (current['timestamp'] - previous['timestamp']).total_seconds() / 60
+            time_gap = (current['timestamp'] - previous['timestamp']).total_seconds() / 3600
             
             if time_gap > context_switching:
                 switches.append({
