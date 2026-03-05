@@ -28,15 +28,27 @@ python scanner.py --days 90   # Custom range
 
 ## Example Output
 ```
-CONTEXT SWITCHES: 4
+CONTEXT SWITCHES: 15
+
 15:43 - CS1083 → Java (gap: 74 min)
+12:28 - CS1083 → Java (gap: 12758 min)
+13:53 - Mastering_Git → Java (gap: 1524 min)
+18:48 - Mastering_Git → Stickman-Game (gap: 19015 min)
+14:07 - Stickman-Game → Leet_Code (gap: 14119 min)
 19:10 - Leet_Code → Mastering_Git (gap: 1220 min)
 23:25 - Mastering_Git → Leet_Code (gap: 241 min)
 18:25 - Leet_Code → Mastering_Git (gap: 1140 min)
+23:09 - Mastering_Git → Leet_Code (gap: 1694 min)
+12:07 - Leet_Code → AI_backup (gap: 13763 min)
+19:22 - AI_backup → AI (gap: 13369 min)
+12:40 - AI → crypto_app (gap: 6782 min)
+00:17 - crypto_app → AI (gap: 6457 min)
+14:26 - AI → Crypto_App_React (gap: 5158 min)
+19:08 - Crypto_App_React → Python_itlogix (gap: 103962 min)
 
 STATS
-Total switches: 4
-Time lost: 1.3 hours (80 minutes)
+Total switches: 15
+Time lost: 5.0 hours (300 minutes)
 ```
 
 ## **Explanation**
