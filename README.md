@@ -62,6 +62,6 @@ Research shows switching between projects costs ~20 minutes of focus time as you
 **The tool tracks these switches to quantify your hidden productivity cost.**
 
 ## My Results
-Over 90 days: 4 real switches, ~1.3 hours lost to context switching.
+Over 60 days: 15 real switches, ~5 hours lost to context switching.
 
 Building a dashboard version. Would you use this?
