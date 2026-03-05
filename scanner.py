@@ -66,7 +66,7 @@ def detect_switches(commits):
         
         
         if current['repo_name'] != previous['repo_name']:
-            time_gap = (current['timestamp'] - previous['timestamp']).total_seconds() / 3600
+            time_gap = (current['timestamp'] - previous['timestamp']).total_seconds() / 60
             
             if time_gap > context_switching:
                 switches.append({
