@@ -93,8 +93,8 @@ def find_git_repositories(root_path):
             if '.git' in dirnames:
                 git_repos.append(dirpath)
         a = get_commits(git_repos)
-        for commit in a:
-            print(f"{commit['timestamp'].strftime('%Y-%m-%d %H:%M')} | {commit['repo_name']:30} | {commit['message']}")
+        for i in range(1,10):
+            print("name")
         switches = detect_switches(a)
         print(f"\nCONTEXT SWITCHES: {len(switches)}\n")
         for switch in switches:
@@ -109,7 +109,6 @@ def find_git_repositories(root_path):
         print(f"Permission denied: {e}")
     
     except PermissionError as e:
-        print(f"Permission denied: {e}")
         get_commits(git_repos)
         return git_repos
 
@@ -124,5 +123,3 @@ if __name__ == "__main__":
     repositories = find_git_repositories(user_path)
     
 
-
-print("My name is baiabrs")
